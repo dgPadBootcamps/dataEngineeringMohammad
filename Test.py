@@ -1,28 +1,31 @@
 import twitter as tw
 import csv
 
-item = tw.TwitterSearchScraper("corona lebanon", False)
 
-tweets = []  # the list of the data
+def read_tweets(search):
+    item = tw.TwitterSearchScraper(search, False)
 
-for i, tweet in enumerate(item.get_items()):
-    if i > 10:
-        break
+    tweets = []  # the list of the data
 
-    tweets.append([{"id": tweet.id, "userName": tweet.user.username, "Tweet": tweet.content, "likes": tweet.likeCount}])
+    for i, tweet in enumerate(item.get_items()):
+        if i > 10:
+            break
 
-
-def tw():
+        tweets.append({"id": tweet.id, "userName": tweet.user.username, "Tweet": tweet.content, "likes": tweet.likeCount})
     return tweets
 
 
-header = [' TweetId', 'UserName', 'Content', 'LikesNumber']  # The header of the data props
+def save_tweets(search):
+    header = [' TweetId', 'UserName', 'Content', 'LikesNumber']  # The header of the data props
 
-# open the file in the write mode
-with open('CoronaLebanon.csv', 'w', encoding='UTF8', newline='') as f:
-    writer = csv.writer(f)  # the csv writer
+    # open the file in the write mode
+    with open('CoronaLebanon.csv', 'w', encoding='UTF8', newline='') as f:
+        writer = csv.writer(f)  # the csv writer
 
-    # write the header
-    writer.writerow(header)
-    # write the fetched data
-    writer.writerows(tw())
+        # write the header
+        writer.writerow(header)
+        # write the fetched data
+        writer.writerows(read_tweets(search))
+
+        return "Saved"
+
