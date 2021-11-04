@@ -9,7 +9,12 @@ for i, tweet in enumerate(item.get_items()):
     if i > 10:
         break
 
-    tweets.append([tweet.id, tweet.user.username, tweet.content, tweet.likeCount])  # the props of the data I need
+    tweets.append([{"id": tweet.id, "userName": tweet.user.username, "Tweet": tweet.content, "likes": tweet.likeCount}])
+
+
+def tw():
+    return tweets
+
 
 header = [' TweetId', 'UserName', 'Content', 'LikesNumber']  # The header of the data props
 
@@ -20,4 +25,4 @@ with open('CoronaLebanon.csv', 'w', encoding='UTF8', newline='') as f:
     # write the header
     writer.writerow(header)
     # write the fetched data
-    writer.writerows(tweets)
+    writer.writerows(tw())
