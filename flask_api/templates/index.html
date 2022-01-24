@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body style="height: 100%; margin: 0">
+<h2>
+    Influencers Analysis ...
+</h2>
+        <div id="container" style="height: 100%"></div>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+        <script type="text/javascript">
+        
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+var data = [];
+
+$.getJSON("/influencers_analysis",function (influencers) {//http://127.0.0.1:5000
+  get_influencers(influencers);
+  console.log(influencers);
+});
+function get_influencers(influencers){
+  data = influencers;
+    const treemapOption = {
+      series: [
+        {
+          type: 'treemap',
+          id: 'echarts-package-size',
+          animationDurationUpdate: 1000,
+          roam: false,
+          nodeClick: undefined,
+          data: data,
+          universalTransition: true,
+          label: {
+            show: true
+          },
+          breadcrumb: {
+            show: false
+          }
+        }
+      ]
+    };
+    const sunburstOption = {
+      series: [
+        {
+          type: 'sunburst',
+          id: 'echarts-package-size',
+          radius: ['20%', '90%'],
+          animationDurationUpdate: 1000,
+          nodeClick: undefined,
+          data: data,
+          universalTransition: true,
+          itemStyle: {
+            borderWidth: 1,
+            borderColor: 'rgba(255,255,255,.5)'
+          },
+          label: {
+            show: true
+          }
+        }
+      ]
+    };
+    let currentOption = treemapOption;
+    myChart.setOption(currentOption);
+    setInterval(function () {
+      currentOption =
+        currentOption === treemapOption ? sunburstOption : treemapOption;
+      myChart.setOption(currentOption);
+    }, 3000);
+  }
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+        </script>
+    </body>
+</html>
+    

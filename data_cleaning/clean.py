@@ -9,5 +9,12 @@ def clean_data(tweet: str):
     clean_tweet = re.sub(r"http\S+", "", clean_tweet)
     clean_tweet = re.sub(r"www.\S+", "", clean_tweet)
     clean_tweet = clean_tweet.replace("\n", "")
-    clean_tweet = clean_tweet.replace("/ ", " ")
+    clean_tweet = clean_tweet.replace("/ ", "")
+    clean_tweet = clean_tweet.replace(":", "")
+    clean_tweet = clean_tweet.replace(".", "")
+    clean_tweet = clean_tweet.replace("/", "")
+    clean_tweet = clean_tweet.replace("•", "")
+    clean_tweet = clean_tweet.replace(",", "")
+    clean_tweet = clean_tweet.replace("'", "")
+    clean_tweet = clean_tweet.replace('"', "")
     return clean_tweet
