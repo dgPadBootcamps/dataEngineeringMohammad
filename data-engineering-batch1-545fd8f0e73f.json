@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "data-engineering-batch1",
-  "private_key_id": "545fd8f0e73f3f4c88da8e42ed65259d1991333b",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvDNSZNE6zbrES\n366oYgheBYeEm/sY6yMM9QDoSdow3JB1h3A0yDgCk1+tSxIZN75kNSmPnU8kDEin\n+zKHImJksQi3AsU/cY4hiBwSH3McLnqreSc4aTLAs2ayX1YPnfvhHSlCZqLPeqAw\nQ6n0uPO/7RemFhH9aRwn6c6Ptba8goeeGypXTgx8fZzqXSIACJa1VWA5DPgjLyl7\nyQYK3h1n3bMO/LRINGptfIBAgpomrOruVMWgl6ex3WMFjz3PPZ6r6YE541B+zbem\nV5ZsDI3aHQGIq9HM1adN9qRn6y07ZGABdOccRFIf0j4fUfsgJLhxX6MKTnhOIyd6\n8agr3UwfAgMBAAECggEATFkkQM33pXsZ8ElvPDHFxHxU5xnBItUrrHMPukC70aPh\nveEcp2jMRRNSH5smgak2eS5WujS6V9ajueBt4VK154TvcCLdNRaqDyX2WFEvO5Nq\nHW/yE0COyk109UdvmdAmE8FMRZHOYP/y7hoU/o/MgGFAd0gZAJXfmej4FuYClaT/\nhuekaMgeD/66OUvOMAy3/OSfhUgABcPe794FR439xj/mgI//1PMzyqMCliDr36cV\nuCceEJFLYJ7eqipmP2Jd8ofLtp+X8d5IqNn05HMQv2l/BWoWAX6BgQWpp5su3t0r\n7la3TLwSPooB00o4JIxcRU7i+wSOMLAkrEnxriGfwQKBgQDl7crMXP+7MDt51WQf\nqKXKdyeZaekO0CNY5+GTbBelcbHQOX6EPT6wsTFLJ7LvYuPEpalUhu8lTLn2KXoq\nri0tC1n9zjnEINXmZrlexXn1ExrR6GvlZxbVnh1yQzGQOO8cZ4Xoi4IbSN86F7IS\nT1oL1aIsCI9DPp0n5hIO8NRyXQKBgQDC5g7HcMWfZMp21rpSRDrRUMQgkU/bKHO8\nDYTQNv+9Wdrzz3zk+4c8qBmCG9xUtbdVJheA7/bt2cMQftuuO2zk7/eiYwjs3U2h\nLhzEz/xgAnToxoAEp3pwiSpr2E3wdjSvCuZGQTLa0dL8UOKDA58tIXrB7x9ZRI7o\nCohZUcoIqwKBgHJ/5Em41jDlZ/jX5zBMz6Lvi2y+bSzPQYr4jkDXxz7AS4gh2XsI\n9LsQwjdm4ZiMalh3FsfdGiI8/y4yoX+3lQ+lY38cv2+H2n0OEqm7NWxxwx1c3L40\nhA6E2q0YAQqND6XZd7nCH1xvAZrwSeEMWw8hp8y9xnn6KFDCJaQDEgiRAoGAc1/V\nJ+NuWalE4YzDx6d0WizBrbXX3BjaSlyGXuvwAJuMrgAKI1Ny/0lTsF3l1I+t884U\n49MqDit2+fDfAwlSsUQNCCgwRGfNaLjvduLYt808f//iEN9D8BKC9kyZ9ttC3MxK\n/RPjkv3bNFp9fKlMNV84WE3B9QpMvrhdduKgAvkCgYAJRiypiH0RRUIxXcWJG5Wd\nZSU6zj0jt5tF+d5Idle+RIZ/a1FbON5XpgzOVRiDoxvtBmfSRKPuZuIhbxF5+GbD\nRLbI5muKdQaonf2z7ktuOCf05QgVGz+w9FPwHWu58X+THZMqg91YpXPa1tE3MAbc\n7fjUqgmHhqjbCGUDm4Zuww==\n-----END PRIVATE KEY-----\n",
-  "client_email": "google-storage-mhmd@data-engineering-batch1.iam.gserviceaccount.com",
-  "client_id": "112037719497676219926",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-storage-mhmd%40data-engineering-batch1.iam.gserviceaccount.com"
-}
+
